@@ -15,6 +15,8 @@ public class ItemController {
     @Autowired
     private ItemService itemService;
 
+    // endpoints
+
     @PostMapping("/add")
     public String add(@RequestBody Item item) {
         itemService.saveItem(item);
